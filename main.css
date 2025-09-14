@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+@keyframes zamykanie_zakladki {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes otwieranie_zakladki {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+body {
+    background-color: #333;
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+}
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: #333;
+    text-align: center;
+    padding: 1% 0;
+    transition: 2s;
+}
+#menu label {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: relative; /* Needed for pseudo-element */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#menu label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -4px;
+    width: 95%; /* Increased from 80% to 95% */
+    height: 2px;
+    background: rgb(2, 148, 193);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+
+#menu label:hover {
+    color: rgb(2, 148, 193);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#menu label:hover::after {
+    transform: scaleX(1.1);
+    
+}
+
+#menu label.active-menu,
+#menu label.active-menu:hover {
+    color: rgb(2, 148, 193);
+}
+#menu label.active-menu::after {
+    transform: scaleX(1.1);
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+#Strona_glowna {
+    margin: 5% 10%;
+    text-align: left;
+    background-color: gray;
+    padding: 20px;
+}
+
+#O_nas {
+    margin: 5% 10%;
+    text-align: left;
+    background-color: gray;
+    padding: 20px;
+}
+
+#Nasze_uslugi {
+    margin: 5% 10%;
+    text-align: left;
+    background-color: gray;
+    padding: 20px;
+}
+
+#Kontakt {
+    margin: 5% 10%;
+    text-align: left;
+    background-color: gray;
+    padding: 20px;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 800px) {
+    #menu {
+        flex-direction: column;
+        gap: 20px; /* Use px for vertical gap */
+        padding: 20px 0;
+    }
+    #menu label {
+        font-size: 18px;
+    }
+    img {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+}
