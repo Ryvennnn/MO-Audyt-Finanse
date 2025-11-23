@@ -13,6 +13,7 @@ body {
     background-color: #333;
     font-family: "Funnel Display", sans-serif;
     font-optical-sizing: auto;
+    -webkit-text-stroke: 0.2px black;
     color: white;
 }
 #menu {
@@ -76,9 +77,15 @@ img {
 #Strona_glowna {
     margin: 5% 10%;
     text-align: left;
-    background-color: gray;
     padding: 20px;
+    padding-bottom: 500px;
+    border-radius: 20px;
+    background-image:url(zdj/zdj1.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
+
 
 #O_nas {
     margin: 5% 10%;
@@ -88,6 +95,13 @@ img {
 }
 
 #Nasze_uslugi {
+    margin: 5% 10%;
+    text-align: left;
+    background-color: gray;
+    padding: 20px;
+}
+
+#Dlaczego_my {
     margin: 5% 10%;
     text-align: left;
     background-color: gray;
