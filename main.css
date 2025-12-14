@@ -9,6 +9,18 @@
     100% {opacity: 1;}
 }
 
+#logo{
+    width: 150px;
+    height: auto;
+}
+@keyframes ladowanie_strony1 {
+    0% {gap: 0%;}
+    100% {gap: 10%;}
+}
+@keyframes ladowanie_strony2 {
+    0% {gap: 0px;}
+    100% {gap: 20px;}
+}
 body {
     background-color: #333;
     font-family: "Funnel Display", sans-serif;
@@ -21,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10%;
+    animation: ladowanie_strony1 1s ease-in-out;
     background-color: #333;
     text-align: center;
     padding: 1% 0;
@@ -74,7 +87,16 @@ img {
     height: auto;
 }
 
+@keyframes otwieranie1 {
+    0% {padding-top: 20%;}
+    100% {padding-top: 0%;}
+}
+@keyframes otwieranie2 {
+    0% {padding-top: 50%;}
+    100% {padding-top: 0%;}
+}
 #Strona_glowna {
+    animation: otwieranie1 1s ease-in-out;
     margin: 5% 10%;
     text-align: left;
     padding: 20px;
@@ -129,6 +151,7 @@ img {
         flex-direction: column;
         gap: 20px; /* Use px for vertical gap */
         padding: 20px 0;
+        animation: ladowanie_strony2 2s ease-in-out;
     }
     #menu label {
         font-size: 18px;
@@ -136,5 +159,8 @@ img {
     img {
         width: 80px;
         margin-bottom: 10px;
+    }
+    #Strona_glowna{
+        animation: otwieranie1 1s ease-in-out;
     }
 }
