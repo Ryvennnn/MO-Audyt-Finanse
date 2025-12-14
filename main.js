@@ -1,5 +1,8 @@
 var Strona_glowna = document.getElementById("Strona_glowna");
 var O_nas = document.getElementById("O_nas");
+var Nasze_uslugi = document.getElementById("Nasze_uslugi");
+var Dlaczego_my = document.getElementById("Dlaczego_my");
+var Kontakt = document.getElementById("Kontakt");
 var body = document.getElementById("body"); 
 
 
@@ -48,3 +51,6 @@ setActiveLabel(zakladka);
         console.log("Jestesmy w tej samej zakladce");
     }
 }
+
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("folded");}

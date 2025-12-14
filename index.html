@@ -10,7 +10,7 @@
 <body id="body">
     
     <div class="menu" id="menu"> 
-       <img id="logo" src="logo.png">
+       <img id="logo" src="logo.png" onclick="toggleMenu()">
        <label onclick="zmiana_zakladki(Strona_glowna)">Strona Główna</label>
        <label onclick="zmiana_zakladki(O_nas)">O nas</label>
        <label onclick="zmiana_zakladki(Nasze_uslugi)">Nasze usługi</label>
@@ -44,21 +44,44 @@
         <div id="grupa"> 
 
             <div id ="podgrupa">
-                <h2 style="color: #00212c;">Prowadzenie ksiąg</h2>
+                <h2>Prowadzenie ksiąg</h2>
                 <p>Kompleksowo prowadzimy PKPiR, pełną księgowość oraz ewidencje VAT, dbając o zgodność z przepisami i terminowość rozliczeń.</p>
             </div>
 
-           <div style="background-color: #0294c1; padding: 20px; text-align: center;">
-                <h2 style="color: #00212c;">Prowadzenie ksiąg</h2>
-                <p>Kompleksowo prowadzimy PKPiR, pełną księgowość oraz ewidencje VAT, dbając o zgodność z przepisami i terminowość rozliczeń.</p>
+            <div id ="podgrupa">
+                <h2>Obsługa kadr i płac</h2>
+                <p>Zajmujemy się przygotowaniem umów, zgłoszeniami i rozliczeniami ZUS oraz pełną obsługą wynagrodzeń i dokumentacji pracowniczej.</p>
             </div>
 
-            <div style="background-color: #0294c1; padding: 20px; text-align: center;">
-                <h2 style="color: #00212c;">Prowadzenie ksiąg</h2>
-                <p>Kompleksowo prowadzimy PKPiR, pełną księgowość oraz ewidencje VAT, dbając o zgodność z przepisami i terminowość rozliczeń.</p>
+            <div id ="podgrupa">
+                <h2>Deklaracje i sprawozdawczość</h2>
+                <p>Przygotowujemy deklaracje podatkowe, sprawozdania finansowe oraz wymagane raporty do instytucji publicznych i banków.</p>
             </div>
 
         </div>
+
+        <br>
+
+        <div id="grupa"> 
+
+            <div id ="podgrupa">
+                <h2>Reprezentacja przed urzędami</h2>
+                <p>Reprezentujemy klientów w kontaktach z US, ZUS oraz innymi instytucjami, prowadząc korespondencję i wyjaśnienia w ich imieniu.</p>
+            </div>
+
+            <div id ="podgrupa">
+                <h2>IFRS/MSR</h2>
+                <p>Współpracujemy z firmami raportującymi według standardów IFRS/MSR, przygotowując dane księgowe zgodnie z tymi wymogami.</p>
+            </div>
+
+            <div id ="podgrupa">
+                <h2>Pozyskiwanie finansowania</h2>
+                <p>Wspieramy w przygotowaniu kompletnych wniosków kredytowych i leasingowych, dostarczając niezbędne analizy i dokumenty finansowe.</p>
+            </div>
+
+        </div>
+
+
         <p>Zależy nam na długotrwałych relacjach biznesowych i mierzalnych efektach — oszczędności czasu i kosztów dla klienta.</p>
     </div>
 
@@ -109,8 +132,16 @@
                 <td style="padding:6px 8px">Jabłowo Pałuckie 9a, 89-210 Łabiszyn</td>
             </tr>
             <tr>
-                <td style="padding:6px 8px;font-weight:600">NIP / REGON / KRS</td>
-                <td style="padding:6px 8px">NIP: 5621822014 · REGON: 528996019 · KRS: 0001112923</td>
+                <td style="padding:6px 8px;font-weight:600">NIP</td>
+                <td style="padding:6px 8px">5621822014</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 8px;font-weight:600">REGON</td>
+                <td style="padding:6px 8px">528996019</td>
+            </tr>
+            <tr>
+                <td style="padding:6px 8px;font-weight:600">KRS</td>
+                <td style="padding:6px 8px"> 0001112923</td>
             </tr>
             <tr>
                 <td style="padding:6px 8px;font-weight:600">Kapitał zakładowy</td>
