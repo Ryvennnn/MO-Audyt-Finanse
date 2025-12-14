@@ -107,6 +107,14 @@ img {
     background-color: gray;
     padding: 20px;
 }
+#grupa {
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+}
+#podgrupa {
+    background-color: #0294c150; padding: 20px; text-align: center; border-radius: 10px;
+}
 
 #Kontakt {
     margin: 5% 10%;
