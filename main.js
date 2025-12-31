@@ -54,3 +54,29 @@ setActiveLabel(zakladka);
 
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("folded");}
+
+
+const now = new Date();
+const hour = now.getHours();
+const godziny_otwarcia = document.getElementById("godziny-otwarcia");
+
+//hour >= 8 && hour < 14
+//hour === 14
+//
+if (hour >= 8 && hour < 14) {
+    godziny_otwarcia.textContent = " (Otwarte teraz)";
+    godziny_otwarcia.style.color = "#00FF4D";
+    godziny_otwarcia.style.fontWeight = "bold";
+
+    godziny_otwarcia.style.padding = "2px 4px";
+} else if (hour === 14) {
+    godziny_otwarcia.textContent = " (Zamykamy się za godzinę)";
+    godziny_otwarcia.style.color = "#FFA200";
+    godziny_otwarcia.style.fontWeight = "bold";
+    godziny_otwarcia.style.padding = "2px 4px";
+} else {
+    godziny_otwarcia.textContent = " (Już zamknięte)";
+    godziny_otwarcia.style.color = "#FF0000";
+    godziny_otwarcia.style.fontWeight = "bold";
+    godziny_otwarcia.style.padding = "2px 4px";
+}

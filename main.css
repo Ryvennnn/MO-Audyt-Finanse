@@ -116,7 +116,7 @@ img {
     margin: 5% 10%;
     text-align: left;
     padding: 20px;
-    padding-bottom: 500px;
+    padding-bottom: 100px;
     border-radius: 20px;
     background-image:url(zdj/zdj1.png);
     background-size: cover;
@@ -129,16 +129,18 @@ img {
     margin: 5% 10%;
     text-align: left;
     background: #777d8c;
-background: linear-gradient(292deg, rgba(119, 125, 140, 1) 0%, rgba(94, 94, 94, 1) 28%, rgba(135, 135, 135, 1) 100%);
+    background: linear-gradient(292deg, rgba(119, 125, 140, 1) 0%, rgba(94, 94, 94, 1) 50%, rgba(135, 135, 135, 1) 100%);
     padding: 20px;
     border-radius: 20px;
 }
 #O_nas_podgrupa {
     background-color: darkgray;
     padding: 20px;
-    width: fit-content;
+    width: auto;
     border-radius: 10px;
+    flex: 1;
 }
+
 #O_nas_nadgrupa {
     display: flex;
     gap: 20px;
@@ -146,20 +148,95 @@ background: linear-gradient(292deg, rgba(119, 125, 140, 1) 0%, rgba(94, 94, 94, 
     margin-top: 20px;
 }
 
-#Nasze_uslugi {
-    margin: 5% 10%;
-    text-align: left;
-    background-color: gray;
-    padding: 20px;
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding-left: 30px;
+  position: relative;
 }
 
+/* pionowa linia */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 10px;
+  bottom: 32px;
+  width: 2px;
+  background: #2aa7c9; /* kolor akcentu */
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 24px 20px;
+  color: #eaeaea;
+}
+
+/* kropka */
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: #2aa7c9;
+  border-radius: 50%;
+}
+
+.timeline .year {
+  font-weight: 600;
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+
+
+
+#Nasze_uslugi {
+    position: relative;
+    margin: 5% 10%;
+    text-align: left;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+#checklista{
+        font-style:italic;
+        font-weight: lighter;
+}
+    
+#Nasze_uslugi::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("zdj/emptyroom.jpg");
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(5px) brightness(35%);
+    transform: scale(1.1); /* maskuje krawędzie po blurze */
+
+    z-index: -1;
+}
+#wazne {
+         text-shadow:
+    0 0 5px #1ea7ff,
+    0 0 10px #1ea7ff,
+    0 0 20px #1ea7ff;
+    }
 
 
 #Dlaczego_my {
     margin: 5% 10%;
     text-align: left;
-    background-color: gray;
+    background: #777d8c;
+    background: linear-gradient(292deg, rgba(119, 125, 140, 1) 0%, rgba(94, 94, 94, 1) 50%, rgba(135, 135, 135, 1) 100%);
     padding: 20px;
+    border-radius: 20px;
 }
 #grupa {
     display:flex;
@@ -177,8 +254,10 @@ background: linear-gradient(292deg, rgba(119, 125, 140, 1) 0%, rgba(94, 94, 94, 
 #Kontakt {
     margin: 5% 10%;
     text-align: left;
-    background-color: gray;
+    background: #777d8c;
+    background: linear-gradient(292deg, rgba(119, 125, 140, 1) 0%, rgba(94, 94, 94, 1) 50%, rgba(135, 135, 135, 1) 100%);
     padding: 20px;
+    border-radius: 20px;
 }
 
 /* Responsive styles for mobile devices */
@@ -252,7 +331,7 @@ background: linear-gradient(292deg, rgba(119, 125, 140, 1) 0%, rgba(94, 94, 94, 
         align-items: center;
         justify-content: center;
         gap: 5px;
-        font-size: 12px;
+        font-size: 15px;
         flex: 1;
     }
     #grupa {
@@ -269,5 +348,12 @@ background: linear-gradient(292deg, rgba(119, 125, 140, 1) 0%, rgba(94, 94, 94, 
     #Kontakt iframe {
         width: 100%;
         height: 250px;
+    }
+    #wycentrowanie {
+        text-align: center;
+    }
+    #godziny-otwarcia {
+        display: block;
+        width: fit-content;
     }
 }
