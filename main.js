@@ -80,3 +80,7 @@ if (hour >= 8 && hour < 14) {
     godziny_otwarcia.style.fontWeight = "bold";
     godziny_otwarcia.style.padding = "2px 4px";
 }
+document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('mousedown', e => e.preventDefault()); // blokuje focus na desktop
+  img.addEventListener('touchstart', e => e.preventDefault()); // blokuje focus na mobile
+});
