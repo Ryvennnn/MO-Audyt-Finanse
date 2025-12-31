@@ -16,11 +16,9 @@
     height: auto;
     cursor: pointer;
     transition: 0.5s;
-    -webkit-tap-highlight-color: transparent; /* usuwa niebieski efekt po tapnięciu */
-    outline: none;                             /* usuwa focus outline */
-    user-select: none;                         /* zapobiega zaznaczaniu */
-    -webkit-user-select: none;                 /* dodatkowo dla Safari */
-    -webkit-touch-callout: none; 
+    -webkit-tap-highlight-color: transparent; /* usuwa niebieski efekt na dotyku */
+    outline: none;                             /* usuwa outline */
+    user-select: none; 
 }
 #logo:hover{
     filter: brightness(200%);
