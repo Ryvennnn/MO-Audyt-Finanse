@@ -6,7 +6,13 @@
     <title>MO Audyt Finanse</title>
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    
 </head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body id="body">
     
     <div class="menu" id="menu"> 
@@ -25,12 +31,16 @@
         <h1 style="font-size:80px">MO Audyt Finanse</h1>
         <p style="font-size: x-large;" class="lead">Profesjonalne usługi księgowe, kadrowo‑płacowe i doradcze dla firm — rzetelnie, terminowo, z pełnym wsparciem.</p>
 
-        <ul style="font-size: large;">
-            <li><strong>Kompleksowa obsługa:</strong> księgowość, kadry, płace i doradztwo podatkowe.</li>
-            <li><strong>Doświadczenie:</strong> 18 lat praktyki, certyfikat księgowy i wpis biegłego rewidenta.</li>
-            <li><strong>Indywidualne podejście:</strong> oferta i ceny dopasowane do skali działalności.</li>
-        </ul>
-
+        <div style="font-size: large;display:flexbox;">
+            <p>
+            <strong>Kompleksowa obsługa:</strong> księgowość, kadry, płace i doradztwo podatkowe.
+            <p>
+            <strong>Doświadczenie:</strong> 18 lat praktyki, certyfikat księgowy i wpis biegłego rewidenta.
+            <p>
+            <strong>Indywidualne podejście:</strong> oferta i ceny dopasowane do skali działalności.
+            <p>
+        </div>
+        <br>
         <p style="text-align:center;margin-top:14px;">
             <button onclick="zmiana_zakladki(Kontakt)" style="font-size:medium; padding:10px 16px;border-radius:6px;cursor:pointer;background:#0294c1;color:#fff;border:none">Skontaktuj się</button>
             <a href="#Nasze_uslugi" onclick="zmiana_zakladki(Nasze_uslugi)" style="margin-left:12px;color:#ffffff;text-decoration:none">Poznaj usługi</a>
@@ -87,8 +97,35 @@
 
     <!-- O nas -->
     <div class="O_nas" id="O_nas" style="display: none;">
-        <h1>O firmie</h1>
-        <p><strong>Marta Orzechowska</strong> — Prezes i główny specjalista z 18‑letnim doświadczeniem w rachunkowości.</p>
+        <h1>O Nas</h1>
+        <div class="marta-info" style="display: flex;align-items: center;gap: 0.2%;"><h2>Marta Orzechowska </h2><p class="marta-desc" style="font-size: large;"><span class="dash"> — </span>Prezes i główny specjalista z 18‑letnim doświadczeniem w rachunkowości.</p></div>
+
+        <p>Pomagam firmom podejmować bezpieczne decyzje finansowe w oparciu o rzetelne dane, nie pomysły</p>
+        <div id="O_nas_nadgrupa">
+
+            <div id="O_nas_podgrupa">
+                <i class="fa fa-briefcase"></i>
+                <b>18 lat praktyki</b> 
+            </div>
+
+            <div id="O_nas_podgrupa" style="display: flex;align-items: center;gap: 0.2%;">
+                <div>
+                    <i class="material-icons">loupe</i>
+                </div>
+                
+                <div>
+                    <b>Biegły rewident</b>
+                    <label>(BR 13611)</label>
+                </div>
+                
+            </div id="O_nas_podgrupa">
+
+            <div id="O_nas_podgrupa">
+                <i class="material-icons">folder_open</i>
+                <b>certyfikat MF</b><label> (55372/2012)</label>
+            </div>
+
+        </div>
         <ul>
             <li>2007 — rozpoczęcie pracy w biurze rachunkowym (Bydgoszcz)</li>
             <li>2012 — magisterskie studia na WSG (Finanse i Rachunkowość)</li>
@@ -96,7 +133,9 @@
             <li>2019 — wpis na listę biegłych rewidentów (BR 13611)</li>
             <li>2024 — założenie MO Audyt Finanse sp. z o. o.</li>
         </ul>
+        
         <p>Nasza firma łączy wiedzę merytoryczną z praktycznym podejściem do biznesu — skupiamy się na bezpieczeństwie finansowym klienta.</p>
+    
     </div>
 
     <!-- Nasze uslugi -->
